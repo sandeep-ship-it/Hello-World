@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td{
+                padding: 15px;
+            }
+            th{
+                text-align: left;
+
+            }
+            table{
+                border-spacing: 5px;
+            }
+            body{
+                font-family: monospace;
+                font-size: 20px;
+            }
+            .header{
+                text-align: center;
+                padding: 2%;
+                background-color: beige;
+                color: darkslategray;
+                font-size: 40px;
+                font-family: monospace;
+
+            }
+            .center{
+                display: block;
+                margin-left:auto;
+                margin-right:auto;
+                width: 50%;
+            }
+            .form{
+                display: block;
+                margin-left:auto;
+                margin-right:auto;
+                width: 50%;
+                border-color: darkslategray;
+                border-width: 5px;
+                border-radius: 10%;
+                border-style: dotted;
+                padding-left: 20%;
+                background-color:floralwhite
+            }
+            
+        </style>
+        <title>My first HTML page using just html</title>
+        
+    </head>
+    <body>
+        <h1 class="header">Hello and Welcome </h1>
+        
+        <img class='center' src="https://www.freecatphotoapp.com/your-image.jpg" alt="A business cat wearing a necktie.">
+        
+
+        <h2 class="header">Introdution</h2>
+            <p>I am Sandeep Kumar Mishra and I am a student of computer science and Mathematics.
+                I like learning new technologies and use them to make our lives and work easier.
+                Currently I am learning HTML and CSS alongside with some magics I can do using 
+                Python programming language. I am also learning Django web Development framework
+                to develop and deploy a full grown website on my own...
+            </p>
+        <h2 class="header">Some Important links</h2>
+        <p>Here I have included some important links which can be used to learn new skills and do magical things 
+            by talking to computers
+        </p>
+        <ul>
+            <li>A begineer friendly and very application oriented approach to Python
+                <a href="https://automatetheboringstuff.com/">Automate the boring stuff with Python.</a>
+            </li>
+            <li>Another great resource with videos and examples and excercises
+                <a href="https://www.py4e.com/">Python for everybody.</a>
+            </li>
+        </ul>
+        <hr>
+        <p>Following are some general purpose learning resources.</p>
+        <ol>
+            <li>A Mecca for web devlopers <a href="https://www.freecodecamp.org/">FreeCodeCamp.</a></li>
+            <li>Practice sites for problem solving and coding
+                <ul>
+                    <li><a href="https://www.geeksforgeeks.org">GeeksForGeeks</a></li>
+                    <li><a href="https://www.hackerrank.com">HackerRank</a></li>
+                    <li><a href="https://www.hackerearth.com">HackerEarth</a></li>
+                    <li><a href="https://www.leetcode.com">LeetCode</a></li>
+        
+                </ul>
+            </li>
+            <li>A must place for Data scientists <a href="https://www.kaggle.com">Kaggle.</a></li>
+        </ol>
+        <hr>
+        <div class="form">
+            <p>Now we will create a sample form. </p>
+            <form action="https://www.google.com/search?q=">
+                <p>Please input your name</p>
+                <input type="text" placeholder="Enter your name" required>
+                <p>Please select your gender</p>
+                <label for="male">
+                    <input id="male" type="radio" value="male" name="male-female">male
+                </label>
+                <label for="female">
+                    <input id="female" type="radio" value="female" name="male-female">female
+                </label>
+                <!--Go to new line -->
+                <br>
+                <p>Plese check the correct box.</p>
+                <div>
+                    <label for="indian">
+                        <input id="indian" value="indian" type="checkbox" name="nationality" checked>Indian
+                    </label>
+                    <label for="foregin">
+                        <input id="foregin" value="foregin" type="checkbox" name="nationality">Forgin
+                    </label>
+
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <hr>
+        
+        <iframe class="center" width="420" height="315" src="https://www.youtube.com/embed/ifsiP3VhQg4">
+
+        </iframe>
+        <p>This concludes our web page. Thanks </p>
+        <p>This is floating right window.
+        <img style="float:right; width:200px; height:auto;" src="mentor.png" alt='sandeep in mentor'>
+        </p>
+        <h2 class="header">A sample Table</h2>
+        <table style="width:100%">
+            <tr>
+                <th>Name</th><th>PhoneNo</th><th>Address</th>
+            </tr>
+            <tr>
+                <td>Sandeep</td>
+                <td>7007096491</td>
+                <td>Village Ossa, post-deora, PrayagRaj</td>
+            </tr>
+            <tr>
+                <td>Ritu Mishra</td>
+                <td>9839050843</td>
+                <td>Village Ossa, post-deora, PrayagRaj</td>
+                
+
+            </tr>
+        </table>
+        <h2 class="header">Embedding another web page using iframe </h2>
+        <p>Click <a href="https://www.w3schools.com" target="iframe_a"> here </a>to load google in the following frame.</p>
+        <iframe title="another page" name="iframe_a" src="index.html" style="display: block;"></iframe>
+        <p>Please <a href="mailto:osakasandeep@gmail.com">Contact us</a> for more details. </p>
+
+        <h2 class="header">ComputerCode in HTML</h2>
+        <pre>
+        <code>
+            #include<iostream>
+            using namespace std;
+            int main(){
+                cout<<"Hello World\n";
+                return 0;
+            }
+        </code>
+        </pre>
+        <p><samp>Output in my Computer: Hello World</samp></p>
+        <p>To copy on windows use <button><kbd>Ctrl + C</kbd></button></p>
+        <h2 class="header">Accessing Audio using HTML</h2>
+        <audio controls>
+            <source src="music.mp3">
+            Your browser doesn't support the audio element.
+        </audio>
+        
+
+    </body>
+ 
+
+</html>
